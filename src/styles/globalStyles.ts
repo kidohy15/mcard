@@ -4,6 +4,11 @@ import { colorPalette } from './colorPalette'
 export default css`
   ${colorPalette}
 
+  :root {
+    --dimmed-zindex: 10;
+    --alert-zindex: 11;
+  }
+
   html,
   body,
   div,
@@ -128,6 +133,8 @@ export default css`
     border-collapse: collapse;
     border-spacing: 0;
   }
+
+  // button reset
   button {
     border: none;
     margin: 0;
